@@ -44,6 +44,7 @@ app进入后台后,是否成功保存了app之前的状态
     [self emptyEnterBackGroundTimerAndTask];
     
     if(self.isSuccessSaveAppStateInBackGround == YES){ // app 进入后台时间过长, 且挂起之前已经对状态进行保存, 现在app 进入前台, 需要恢复
+        self.isSuccessSaveAppStateInBackGround = NO;
         // 恢复app 至 进入前台时刻 状态
         // do anything ...
     }
