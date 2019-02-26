@@ -55,7 +55,7 @@ app进入后台后,是否成功保存了app之前的状态
 
 //使用此方法释放共享资源、保存用户数据、使计时器失效，并存储足够的应用程序状态信息，以便在稍后终止应用程序时将其恢复到当前态。
 //如果应用程序支持后台执行，则调用此方法而不是应用程序将在用户退出时终止。
-- (void)applicationDidEnterBackground:(UIApplication *)application {
+- (void)applicationDidEnterBackground:(UIApplication *)application { // 如果来到此方法没有申请额外的任务时间, app 程序直接挂起
     
 //    // 测试最长后台时间
 //    [self testEnterBackgroundMaxTimeLen];
